@@ -1,0 +1,245 @@
+#contaniner{
+  width: 100%;
+  width: 1040px;
+  height: 2597.4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#contents {
+  width: 100%;
+  width: 980px;
+  height: 2597.4px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* 무비차트 타이틀 스타일 */
+.wrap_movie_chart .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 980px;
+  height: 92.4px;
+  border-bottom: 2px solid #dbdbdb;
+}
+.wrap_movie_chart .title h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+.wrap_movie_chart .title .submenu {
+  margin-left: 20px;
+}
+.wrap_movie_chart .title .submenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.wrap_movie_chart .title .submenu ul li {
+  margin-right: 10px;
+}
+.wrap_movie_chart .title .submenu ul li a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+.wrap_movie_chart .title .submenu ul li.on a {
+  color: #ff5252;
+}
+/* 무비차트 정렬 옵션 스타일 */
+.mini_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  width: 980px;
+  height: 29px;
+  border-bottom: 1px solid #dbdbdb;
+}
+.mini_bar .nowshow {
+  display: flex;
+  align-items: center;
+}
+.mini_bar .nowshow input[type="checkbox"] {
+  margin-right: 5px;
+}
+.mini_bar select {
+  width: 150px;
+  padding: 5px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+.mini_bar select:focus {
+  outline: none;
+  border-color: #ff5252;
+}
+
+.round {
+  border-radius: 50px; /* 둥근 모서리 */
+  padding: 10px 20px; /* 내부 여백 */
+  font-size: 16px; /* 글꼴 크기 */
+  background-color: gray; /* 배경색 */
+  color: white; /* 글자색 */
+  border: none; /* 테두리 제거 */
+  cursor: pointer; /* 마우스 커서 모양 */
+  transition: all 0.3s ease-in-out; /* 변화를 부드럽게 만들기 위한 애니메이션 */
+}
+
+.round:hover {
+  background-color: darkgray; /* 호버 상태일 때의 배경색 */
+}
+
+/* 무비차트 영역 스타일 */
+.movie_chart {
+    margin: 30px auto;
+    width: 980px;
+  }
+  
+  .movie_chart h4 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .movie_chart ol {
+    display: flex;
+    width: 1044px;
+    height: 425px;
+    margin-left: -64px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .movie_chart li {
+    width: 197px;
+    height: 425px;
+    margin-left: 64px;
+    padding-bottom: 30px;
+    display: inline-block;
+  }
+  
+  /* 영화 정보 박스 스타일 */
+  .box-image {
+    position: relative;
+    width: 197px;
+    height: 260px;
+  }
+  
+  .box-image .rank {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    padding: 5px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #F03D3D;
+  }
+  
+  .box-image .thump-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+  }
+  
+  .box-image .thump-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .box_contents {
+    margin: 10px 0;
+    padding: 0 0 0 0px;
+    width: 197px;
+    height: 93px;
+    box-sizing: border-box;
+  }
+  
+  .box_contents strong.title {
+    width: 197px;
+    height: 18px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .score {
+    margin: 10px 0;
+    font-size: 11px;
+    font-weight: bold;
+  }
+  
+  .score .percent {
+    display: inline-block;
+    margin-right: 5px;
+    color: #F03D3D;
+  }
+  
+  .egg-gage {
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    top: 3px;
+  }
+  
+  .egg-gage .egg {
+    display: block;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60%;
+    height: 16px;
+    background-color: #F03D3D;
+    border-radius: 5px;
+  }
+  
+  .egg-gage .percent {
+    position: absolute;
+    top: -25px;
+    left: 60%;
+    font-size: 14px;
+    color: #F03D3D;
+  }
+  
+  .txt-info {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .txt-info strong {
+    font-weight: bold;
+  }
+  
+  .txt-info span {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  
+  .like {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .like a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F03D3D;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold
+  }
+
+  

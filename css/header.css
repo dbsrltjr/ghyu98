@@ -1,0 +1,99 @@
+.header {
+  position: relative;
+  z-index: 101;
+}
+
+.header_content {
+  border-bottom: 1px solid #eee;
+  background-color: #fff; /* 배경색 지정 */
+}
+
+.header_content .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 6px 25px 5;
+  background-color: #fff;
+}
+
+.header .content {
+  width: 991px;
+  height: 112px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+
+.header .content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header .content h1 a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header .content h1 a span {
+  width: 157.91px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.header .content h1 a img{
+  display: block;
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+.header .user_info {
+  width: 456px;
+  height: 57px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.header .user_info li {
+  margin-left: 20px;
+}
+
+.header .user_info li:first-child {
+  margin-left: 0;
+}
+
+.header .user_info li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  word-break: break-all;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}

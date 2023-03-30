@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>movie</title>
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/nav.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header_content">
+      <div class="content">
+        <h1 onclick>
+          <a href="My Project.html">
+            <img src="./img/영화관 로고.png" alt="영화관 로고">
+          </a>
+          <span>FLEX</span>
+        </h1>
+        <ul class="user_info">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav" style="left: 0px;">
+      <div class="contents">
+        <h1><a href="/" tabindex="-1">
+          </a>
+        </h1>
+        <ul>
+          <li>
+            <h2><a href="movies.html">영화</a></h2>
+          </li>
+          <li>
+            <h2><a href="theaters.html">극장</a></h2>
+          </li>
+          <li>
+            <h2><a href="reservation.html">예매</a></h2>
+          </li>
+          <li>
+            <h2><a href="event.html">이벤트</a></h2>
+          </li>
+          <li>
+            <h2><a href="notice.html">공지사항</a></h2>
+          </li>
+          <li>
+            <h2><a href="member.html">멤버십</a></h2>
+          </li>
+        </ul>
+        <div class="search_wrap">
+          <label for="search">
+            <input type="text" id="header_keyword" value>
+            <input type="hidden" id="header_ad_keyword" name="header_ad_keyword">
+            <button type="button" class="btn_search" id="btn_header_search">검색</button>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="contaniner" class>
+      <div id="contents" class style="padding-bottom: 0px;"></div>
+      <iframe title="빠른예매" id="ticket_iframe" src="#" scrolling="no" frameborder="0" width="100%" height="1100px"
+      style="width:100%; border:0 none;">
+    <html lang="ko" xml:lang="ko" xmlns="#">
+      <head id="ct100_Head1"></head>
+    <body style>
+      <a name="t"></a>
+      <div id="wrap" oncontextmenu="return false" ondragstart="return false"
+      onselectstart="return false">
+      <div id="contaniner">
+        <div id="ticket" class="ticket ko">
+          <div class="navi">
+            <div class="newsletter">
+              <p style="display: none;">
+              <a href="#">Click here</a>
+                "if you want to receive newsletter about English subtitle movies"
+            </p>
+            </div>
+            <span class="right">
+            </span>
+          </div>
+          <div class="steps">
+            <div class="step step1" style="height: 600px; display: block;">
+            <div class="section section-movie">
+              <div class="col-head" id="skip_move_list">
+                <h3 class="sreader">영화</h3>
+                <a href="#" class="skip_to_something" onclick="skipToSomething('skip_theater_list');return false;">영화선택 건너뛰기</a>
+              </div>
+              <div class="col-body" style="height: 565px;">
+                <div class="movie-select">
+                  <div class="tabmenu">
+                    <span class="side on"></span>
+                    <a href="#" class="button menu1 selected">전체</a>
+                    <span class="side on"></span>
+                    <a href="#" class="button menu2">
+                    "아트하우스"
+                    <span class="arrow"></span>
+                  </a>
+                    <div class="tabmenu-selectbox MOVIECOLLAGE" style="display: none;">
+                    <ul>
+                      <li>
+                      </li>
+                    </ul>
+                    </div>
+                    <span class="side"></span>
+                  </div>
+                  <a href="#" onclick="return false;" class="button menu3">
+                  "특별관"
+                  <span class="arrow"></span>
+                  </a>
+                  <div class="tabmenu-selectbox SPECIALTHEATER" style="display: none;">
+                  <ul>
+                    <li>
+                    </li>
+                  </ul>
+                  </div>
+                  <span class="side"></span>
+                </div>
+                <div class="sortmenu"></div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+    </html>
+    </iframe> 
+      </div>
+
+      
+
+      <div
+  
+    <section class="movie-list">
+      <h2>상영중인 영화</h2>
+      <ul>
+        <li>
+          <a href="movie1.html">
+            <img src="movie1.jpg" alt="영화1 포스터">
+            <div class="movie-info">
+              <h3>영화1 제목</h3>
+              <p>감독: 감독1 | 출연: 배우1, 배우2, 배우3</p>
+              <p>상영시간: 120분 | 관람등급: 청소년 관람불가</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="movie2.html">
+            <img src="movie2.jpg" alt="영화2 포스터">
+            <div class="movie-info">
+              <h3>영화2 제목</h3>
+              <p>감독: 감독2 | 출연: 배우4, 배우5, 배우6</p>
+              <p>상영시간: 105분 | 관람등급: 12세 관람가</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="movie3.html">
+            <img src="movie3.jpg" alt="영화3 포스터">
+            <div class="movie-info">
+              <h3>영화3 제목</h3>
+              <p>감독: 감독3 | 출연: 배우7, 배우8, 배우9</p>
+              <p>상영시간: 95분 | 관람등급: 전체 관람가</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="event">
+      <h2>진행중인 이벤트</h2>
+      <ul>
+        <li>
+          <a href="event1.html">
+            <img src="event1.jpg" alt="이벤트1 포스터">
+            <div class="event-info">
+              <h3>이벤트1 제목</h3>
+              <p>이벤트 기간: 2023년 3월 1일 ~ 2023년 3월 31일</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="event2.html">
+            <img src="event2.jpg" alt="이벤트2 포스터">
+            <div class="event-info">
+              <h3>이벤트2 제목</h3>
+              <p>이벤트 기간: 2023년 3월 14일 ~ 2023년 4월 30일</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="notice">
+      <h2>공지사항</h2>
+      <ul>
+        <li>
+          <a href="notice1.html">
+            <div class="notice-info">
+              <h3>공지사항1 제목</h3>
+              <p>공지사항1 내용 요약...</p>
+              <p>게시일: 2023년 3월 10일</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="notice2.html">
+            <div class="notice-info">
+              <h3>공지사항2 제목</h3>
+              <p>공지사항2 내용 요약...</p>
+              <p>게시일: 2023년 3월 1일</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    </div>
+
+
+
+    <footer>
+      <!-- 웹 페이지 하단에 추가 정보나 저작권 등을 포함할 수 있는 푸터 영역 -->
+    </footer>
+</body>
+
+</html>

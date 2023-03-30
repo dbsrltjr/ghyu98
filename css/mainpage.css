@@ -1,0 +1,295 @@
+#contaniner{
+    position: relative;
+    width: 100%;
+    z-index: 7;
+}
+
+.MovieSelection{
+    position: relative;
+    height: 498px;
+    background-color: #000;
+}
+
+#contaniner .contents{
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.MovieSelection .contents .video_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.MovieSelection .contents .video_wrap video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.35);
+    z-index: 1;
+}
+
+.MovieSelection .contents .Movie_title{
+    position: absolute;
+    top: 170px;
+    left: 0;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    line-height: 1.450em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.MovieSelection .contents .Movie_txt{
+    overflow: hidden;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    max-width: 100%;
+    font-size: 20px;
+    color: #fff;
+    line-height: 1.450em;
+    text-overflow: ellipsis;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.MovieSelection .contents .Movie_controller{
+    display: inline-flex;
+    position: absolute;
+    top: 315px;
+    left: 3px;
+    z-index: 4;
+}
+
+.MovieSelection .contents .Movie_controller .btn_view{
+    display: block;
+    padding: 5px 30px 5px 18px;
+    font-size: 14px;
+    color: #343434;
+    line-height: 1.429em;
+    background: rgba(255, 255, 255, 0.8) url(C:/dev/Python/movie/img/화살표.png) calc(100% - 11px) center/8px 13px scroll no-repeat;
+    border-radius: 15px;
+}
+
+.MovieSelection .contents .Movie_controller .btn_stop{
+    display: block;
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: transparent url(C:/dev/Python/movie/img/재생.jpg) center/18px scroll no-repeat;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+.MovieSelection .contents .Movie_controller .btn_sound{
+    display: block;
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    font-size: 0;
+    background: transparent;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+.movie_chart_wrap{
+    clear: none;
+    float: none;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+}
+
+.movie_chart_wrap .contents{
+    overflow: hidden;
+    padding: 50px 30px 60px;
+}
+
+.movie_chart_btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.movie_chart_btn .chart_btn{
+    display: inline-flex;
+}
+
+.movie_chart_btn .chart_btn h3{
+    height: auto;
+    margin: 0;
+    line-height: 1em;
+    background-image: none;
+}
+
+.movie_chart_btn .chart_btn h3 a.active {
+    font-weight: 700;
+    color: #222;
+}
+
+.movie_chart_btn .chart_btn h3 ~ h3{
+    position: relative;
+    margin-left: 32px;
+}
+.movie_chart_btn .chart_btn h3 ~ h3:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    width: 1px;
+    height: 14px;
+    margin-top: -7px;
+    background-color: #d8d8d8;
+}
+
+.movie_chart_btn .chart_btn h3 a{
+    width: 400;
+    font-size: 26px;
+    color: #666;
+    line-height: 1.423em;
+}
+
+.movie_chart_btn .btn_allview{
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.swiper{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.moviechart_list .swiper{
+    overflow: visible;
+    position: relative;
+}
+
+.moviechart_list .swiper_chart{
+    counter-reset: movie-chart-counter;
+}
+
+.swiper_chart {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .img_wrap{
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+    height: 234px;
+    border-radius: 10px;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .img_wrap:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.09) 35%, rgba(0,0,0,0.85));
+    z-index: 2;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .img_wrap img{
+    z-index: 1;
+}
+
+.img_wrap > img{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(0, -50%);
+}
+
+.moviechart_list .swiper_chart .swiper-slide .img_wrap .short_chart_btn{
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .img_wrap:after{
+    content: counter(movie-chart-counter);
+    counter-increment: movie-chart-counter;
+    position: absolute;
+    left: 9px;
+    bottom: -4px;
+    font-weight: 400;
+    font-size: 50px;
+    font-style: italic;
+    color: #fff;
+    line-height: 1em;
+    z-index: 3;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.45);
+}
+
+.moviechart_list .swiper_chart .swiper-slide .short_chart_info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .short_chart_info .movie_name{
+    display: block;
+    flex-basis: 100%;
+    overflow: hidden;
+    margin-top: 14px;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.167em;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .short_chart_info > span{
+    display: block;
+    float: left;
+    margin-top: 9px;
+    font-size: 12px;
+    color: #444;
+    line-height: 1.214em;
+}
+
+.moviechart_list .swiper_chart .swiper-slide .short_chart_info > span ~ span {
+    position: relative;
+    padding-left: 16px;
+}
