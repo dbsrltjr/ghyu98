@@ -4,44 +4,43 @@
 }
 
 .header_content {
+  margin-bottom: 50px;
   border-bottom: 1px solid #eee;
   background-color: #fff; /* 배경색 지정 */
 }
 
-.header_content .content {
+.header_content .contents {
   display: flex;
   justify-content: space-between;
   padding: 30px 6px 25px 5;
   background-color: #fff;
 }
 
-.header .content {
-  width: 991px;
-  height: 112px;
+.header .contents {
+  width: 980px;
   margin: 0 auto;
-  align-items: center;
 }
 
 
-.header .content h1 {
+.header .contents h1 {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
 }
 
-.header .content h1 a {
+.header .contents h1 a {
   display: inline-block;
   vertical-align: middle;
 }
 
-.header .content h1 a span {
+.header .contents h1 a span {
   width: 157.91px;
   height: 24px;
   font-size: 16px;
   font-weight: normal;
 }
 
-.header .content h1 a img{
+.header .contents h1 a img{
   display: block;
   width: 110px;
   height: 110px;
@@ -72,16 +71,6 @@
   font-size: 16px;
 }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  word-break: break-all;
-}
-
 video {
     object-fit: contain;
     overflow-clip-margin: content-box;
@@ -96,4 +85,36 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+:root {
+  --swiper-theme-color: #007aff;
+}
+
+:root {
+  --swiper-navigation-size: 44px;
 }
